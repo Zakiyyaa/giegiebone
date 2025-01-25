@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>giegiebone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff99cc;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        nav ul li a {
+            padding: 5px 10px;
+            transition: o.4s;
+            border-radius: 10px;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff4080;
+            transform: scale(1.5);
+        }
+
+        .hero {
+            margin-top: 20px;
+            padding: 30px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            background-color: #ff6699;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+
+        .hero button:hover {
+            background-color: #ff4080;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        .products {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+        }
+
+        .product img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 50%
+        }
+
+        .product button {
+            background-color: #ff6699;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .product button:hover {
+            background-color: #ff4080;
+        }
+
+        .custom h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .custom-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .map, .faq {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .question {
+            cursor: pointer;
+            margin: 10px 0;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .answer {
+            display: none;
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff99cc;
+            color: #fff;
+            font-size: 2.5rem;
+            margin: 10px 0;
+        }
+
+        i {
+            font-size: 2.5rem;
+            color: white;
+        }
+
+        #contact a {
+            transform: 1.5;
+            transition: 0.5s;
+        }
+
+        #contact a:hover {
+            padding: 10px;
+        }
+
+        .social-icons img {
+            width: 60px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Product</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero" id="home">
+            <h1>Giegiebone</h1>
+            <p>Lengkapi gayamu dengan aksesoris kekinian! harga terjangkau, kualitas terjamin</p>
+            <button onclick="window.location.href='https://wa.me/6281286227504?text=Halo%20saya%20ingin%20memesan'">Order</button>
+        </div>
+    </header>
+
+    <section class="products" id="products">
+        <h2>Product</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="keychain.jpeg" alt="keychain">
+                <h3>Keychain</h3>
+                <p>Jadikan tas mu lebih menarik dengan Keychain keren dari kami!</p>
+                <button onclick="window.location.href='https://wa.me/6281286227504?text=Halo%20saya%20ingin%20memesan%20Keychain'">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="bracelet.jpeg" alt="bracelet">
+                <h3>Bracelet</h3>
+                <p>Tampil beda dengan Bracelet aesthetic yang bikin gaya kamu makin keren!</p>
+                <button onclick="window.location.href='https://wa.me/6281286227504?text=Halo%20saya%20ingin%20memesan%20Bracelet'">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="strapphone.jpeg" alt="strapphone">
+                <h3>Strapphone</h3>
+                <p>Jaga ponselmu tetap aman dan bergaya dengan Strapphone kami yang kekinian!</p>
+                <button onclick="window.location.href='https://wa.me/6281286227504?text=Halo%20saya%20ingin%20memesan%20Strapphone'">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="custom" id="about">
+        <h2>About</h2>
+        <div class="custom-container">
+            <div class="map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d721.017499723495!2d107.47417214810845!3d-6.393555903326709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMjMnMzQuNyJTIDEwN8KwMjgnMjkuMSJF!5e0!3m2!1sid!2sid!4v1737647518850!5m2!1sid!2sid"
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div class="faq">
+                <div class="question" onclick="toggleAnswer(0)">
+                    <h3>Dimana lokasinya?</h3>
+                    <p class="answer">Perum Puri Anggrek Blok G4 No 09 Rt/Rw 05/08, Wancimekar, Kotabaru, Karawang</p>
+                </div>
+                <div class="question" onclick="toggleAnswer(1)">
+                    <h3>Bagaimana cara memesannya?</h3>
+                    <p class="answer">Aksesoris kami dapat di pesan melalui akun sosial media seperti WhatsApp dan Instagram</p>
+                </div>
+                <div class="question" onclick="toggleAnswer(2)">
+                    <h3>Apakah ada design lain?</h3>
+                    <p class="answer">Kami menyediakan berbagai design strapphone, keychain, dan bracelet. Jadi, silakan mampir ke akun sosial media kami!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>Contact</p>
+        <div class="social-icons">
+            <a href="https://wa.me/6281286227504?text=Halo"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.instagram.com/zzavkyaa?igshid=dWJ6Znl5d3czbG1t"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.tiktok.com/@giegiebone?_t=ZS-8t3rqgKMtco&_r=1"><i class="bi bi-tiktok"></i></a>
+            <a href="http://shopee.co.id/giegieboneshop"><i class="bi bi-bag"></i></a>
+            <a href="https://youtube.com/@giegiebone?si=Y-0YgCa58k_XixRy"><i class="bi bi-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAnswer(index) {
+            const answers = document.querySelectorAll('.answer');
+            const answer = answers[index];
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+            } else {
+                answer.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
